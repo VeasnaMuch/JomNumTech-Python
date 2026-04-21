@@ -1,12 +1,19 @@
 import os
 from pathlib import Path
 
+if os.name == "nt":  # Windows
+    separator = "\\"
+else:  # Linux/macOS
+    separator = "/"
+
 
 current_dir = os.path.dirname(os.path.realpath(__file__))
 #print ("Current Directtory is :", current_dir)
 #print (" Path.cwd():",  Path.cwd())
 #print ("os.path.dirname(os.path.realpath(__file__)):", os.path.dirname(os.path.realpath(__file__)))
-file_path = current_dir +"\data.txt"
+file_path = current_dir + separator + "data.txt"
+
+print (file_path)
 
 """
 with open(file_path, "r") as f:
@@ -24,4 +31,3 @@ with open(file_path, "r") as f:
     for line in f:
         line = line.strip()  # Remove trailing newline
         print(line)
- 
