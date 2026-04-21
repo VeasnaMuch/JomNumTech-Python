@@ -13,7 +13,7 @@ current_dir = os.path.dirname(os.path.realpath(__file__))
 #print ("os.path.dirname(os.path.realpath(__file__)):", os.path.dirname(os.path.realpath(__file__)))
 file_path = current_dir + separator + "data.txt"
 
-print (file_path)
+#print (file_path)
 
 """
 with open(file_path, "r") as f:
