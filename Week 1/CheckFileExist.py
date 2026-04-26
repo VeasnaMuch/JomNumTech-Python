@@ -12,4 +12,5 @@ else:
     print("File not found")
 
 #with open("data.txt", "a") as f:
-#    f.write("This is new line \n")
+#    f.write("This is new line \n")\
+print('How are you?')
